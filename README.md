@@ -1,16 +1,136 @@
-# React + Vite
+# 🚀 Tech Blog Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Tech Blog** built using **React + Tailwind CSS**, focused on performance, accessibility, SEO, and clean UI/UX.  
+The application supports article listing, search, category filtering, and modal-based article reading.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Lighthouse Audit Results
 
-## React Compiler
+All Lighthouse audits were run on a **production build**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Performance
+![Performance](./screenshots/overall-performance.png)
 
-## Expanding the ESLint configuration
+### Accessibility
+![Accessibility](./screenshots/seo-performance.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Best Practices
+![Best Practices](./screenshots/accessibility-performance.png)
+
+### SEO
+![SEO](./screenshots/best-practice.png)
+
+**Target Scores**
+- Performance: **90+**
+- Accessibility: **85+**
+- Best Practices: **90+**
+- SEO: **95+**
+
+---
+
+## 🧠 SEO Strategy
+
+### Meta Tags
+- Page title (`<title>`) with max 60 characters
+- Meta description (`<meta name="description">`) with max 160 characters
+- Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`)
+- Twitter Card tags (`summary_large_image`)
+- Dynamic meta handling using `react-helmet-async`
+
+### Structured Data
+- WebSite schema on homepage
+- BlogPosting (Article) schema on blog post pages
+
+### Semantic HTML
+- Used semantic tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
+- Single `<h1>` per page
+- Proper heading hierarchy (`h1 → h2 → h3`)
+- Accessible buttons and landmarks
+
+---
+
+## 🖼 Image Optimization
+
+- Fixed image dimensions to prevent layout shift (CLS)
+- Lazy loading using `loading="lazy"`
+- Optimized image sizes
+- Consistent aspect ratios for article cards
+- Open Graph images sized at 1200 × 630 px
+
+---
+
+## ⚡ Performance Optimizations
+
+- Lighthouse tested on production build only
+- Removed duplicate and render-blocking CSS
+- Tailwind CSS optimized via Vite
+- Avoided forced reflows and unnecessary DOM reads
+- Preconnected external APIs
+- Minimal JavaScript execution on initial load
+
+---
+
+## 🔍 Search & Filter Implementation
+
+### Search
+- Search by article title, description, and content
+- Live result count display
+- Clear (❌) button for better UX
+- "No results found" message
+
+### Category Filter
+- Categories generated dynamically from API data
+- Active category highlighting
+- Combined filtering with search functionality
+
+---
+
+## 🧩 Article Interaction
+
+- Click any article to open full content in a modal
+- Modal can be closed by:
+  - Close (❌) button
+  - ESC key
+  - Clicking outside the modal
+- Accessible and keyboard-friendly
+- Clean typography for readability
+
+---
+
+## ⚠️ Challenges Faced
+
+- Fixing render-blocking CSS warnings
+- Resolving accessibility issues for icon-only buttons
+- Improving contrast ratios for dark mode UI
+- Correctly serving `robots.txt` and `sitemap.xml`
+- Handling Lighthouse warnings caused by dev tools
+
+---
+
+## 🛠 Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- react-helmet-async
+- Lighthouse
+- HTML5 & CSS3
+- REST API (SlingAcademy sample blog API)
+
+---
+
+## 📂 Project Structure
+
+```txt
+/public
+  ├── robots.txt
+  ├── sitemap.xml
+  └── og-image.png
+
+/screenshots
+  ├── lighthouse-performance.png
+  ├── lighthouse-accessibility.png
+  ├── lighthouse-best-practices.png
+  └── lighthouse-seo.png
