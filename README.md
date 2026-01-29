@@ -12,13 +12,13 @@ All Lighthouse audits were run on a **production build**.
 ### Performance
 ![Performance](./screenshots/overall-performance.png)
 
-### Accessibility
+### SEO
 ![SEO](./screenshots/seo-performance.png)
 
-### Best Practices
+### Accessibility
 ![Accessibility](./screenshots/accessibility-performance.png)
 
-### SEO
+### Best Practices
 ![Best Practices](./screenshots/best-practice.png)
 
 **Target Scores**
