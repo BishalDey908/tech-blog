@@ -13,13 +13,13 @@ All Lighthouse audits were run on a **production build**.
 ![Performance](./screenshots/overall-performance.png)
 
 ### Accessibility
-![Accessibility](./screenshots/seo-performance.png)
+![SEO](./screenshots/seo-performance.png)
 
 ### Best Practices
-![Best Practices](./screenshots/accessibility-performance.png)
+![Accessibility](./screenshots/accessibility-performance.png)
 
 ### SEO
-![SEO](./screenshots/best-practice.png)
+![Best Practices](./screenshots/best-practice.png)
 
 **Target Scores**
 - Performance: **90+**
