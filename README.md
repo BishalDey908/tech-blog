@@ -119,18 +119,3 @@ All Lighthouse audits were run on a **production build**.
 - HTML5 & CSS3
 - REST API (SlingAcademy sample blog API)
 
----
-
-## 📂 Project Structure
-
-```txt
-/public
-  ├── robots.txt
-  ├── sitemap.xml
-  └── og-image.png
-
-/screenshots
-  ├── lighthouse-performance.png
-  ├── lighthouse-accessibility.png
-  ├── lighthouse-best-practices.png
-  └── lighthouse-seo.png
