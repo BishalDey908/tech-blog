@@ -24,9 +24,11 @@ const PostCard = ({
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t 
+        <div
+          className="absolute inset-0 bg-gradient-to-t 
                         from-black/50 via-black/10 to-transparent 
-                        opacity-0 group-hover:opacity-100 transition" />
+                        opacity-0 group-hover:opacity-100 transition"
+        />
 
         {/* Tag */}
         <span
@@ -47,9 +49,7 @@ const PostCard = ({
           {title}
         </h3>
 
-        <p className="mt-3 text-sm text-gray-600 line-clamp-3">
-          {description}
-        </p>
+        <p className="mt-3 text-sm text-gray-600 line-clamp-3">{description}</p>
 
         {/* Push meta to bottom */}
         <div className="mt-auto">
@@ -57,7 +57,13 @@ const PostCard = ({
             <div>
               <span className="font-medium text-gray-700">{author}</span>
               <span className="mx-2">•</span>
-              <span>{date}</span>
+              <span>
+                {new Date(date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </span>
             </div>
             <time>{readTime} min read</time>
           </div>

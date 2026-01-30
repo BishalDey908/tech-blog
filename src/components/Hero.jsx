@@ -31,10 +31,10 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
             <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
-              Explore Articles
+              <a href="#articales">Explore Articles</a>
             </button>
             <button className="px-6 py-3 border border-gray-600 hover:border-gray-400 rounded-lg font-medium transition">
-              Subscribe
+               <a href="#articales">Subscribe</a>
             </button>
           </div>
         </div>

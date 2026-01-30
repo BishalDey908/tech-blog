@@ -66,7 +66,13 @@ const ArticleModal = ({ article, onClose }) => {
                 {article.title}
               </h2>
               <p className="text-sm text-gray-200 mt-2">
-                {article.author || "Admin"} • {article.created_at}
+                {article.author || "Admin"} • &nbsp;
+                {new Date(article.created_at).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              
               </p>
             </div>
           </div>
