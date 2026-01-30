@@ -35,7 +35,7 @@ const ArticleGrid = () => {
   });
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12" id="articales">
+    <section className="max-w-7xl mx-auto px-6 py-12" id="articles">
       <h2 className="text-2xl font-bold mb-4">Latest Articles</h2>
 
       <SearchBar

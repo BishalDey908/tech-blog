@@ -13,29 +13,36 @@ const Hero = () => {
           
           {/* Badge */}
           <span className="inline-block mb-4 px-4 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full">
-            🚀 Learn • Build • Scale
+             Tech Articles • Tutorials • Insights
           </span>
 
           {/* Heading */}
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            Insights for Modern
-            <span className="text-blue-500"> Developers</span>
+            Modern Tech
+            <span className="text-blue-500"> Blog & Articles</span>
           </h1>
 
           {/* Description */}
           <p className="text-gray-300 text-lg md:text-xl mb-8">
-            Practical tutorials, system design insights, and real-world coding
-            experiences to help you grow as a developer.
+            Explore in-depth articles on web development, JavaScript, React,
+            performance optimization, and real-world engineering practices.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition">
-              <a href="#articales">Explore Articles</a>
-            </button>
-            <button className="px-6 py-3 border border-gray-600 hover:border-gray-400 rounded-lg font-medium transition">
-               <a href="#articales">Subscribe</a>
-            </button>
+            <a
+              href="#articles"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition"
+            >
+              Read Articles
+            </a>
+
+            <a
+              href="#articles"
+              className="px-6 py-3 border border-gray-600 hover:border-gray-400 rounded-lg font-medium transition"
+            >
+              Latest Posts
+            </a>
           </div>
         </div>
       </div>
